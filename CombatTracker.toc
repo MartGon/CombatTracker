@@ -1,7 +1,7 @@
 ## Interface: 90002
 ## Author: Defu
 ## Version: 0.1
-## Title: Combat
+## Title: CombatTracker
 ## Notes: Tracks enemies combat state
 
 CombatTracker.lua
