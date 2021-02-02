@@ -30,7 +30,6 @@ local function CreateIcons()
 			icon:SetScript('OnUpdate', UpdateIcon)
 			
 			icon.t = icon:CreateTexture(nil, BORDER);			
-			print("Generating icon for nameplate "..index)
 			
 			-- Container
 			icon:SetParent(nameplate);
