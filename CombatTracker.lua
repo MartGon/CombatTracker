@@ -75,7 +75,7 @@ local function OnNameplateAdded(self, event, unitId)
 		local icon = CT_IconPool:Pop() or CreateIcon();
 		
 		icon:SetParent(nameplate);
-		print("Parenting to "..nameplate:GetName())
+		--print("Parenting to "..nameplate:GetName())
 		icon:SetPoint('TOPLEFT', nameplate, -16, -12);
 		icon:SetSize(24, 24);
 		icon.unitId = unitId
@@ -83,7 +83,7 @@ local function OnNameplateAdded(self, event, unitId)
 		CT_UnitIcons[unitId] = icon
 		
 	elseif event =="NAME_PLATE_UNIT_REMOVED" then
-		print("NameplateRemoved");
+		--print("NameplateRemoved");
 		icon = CT_UnitIcons[unitId];
 		CT_UnitIcons[unitId] = nil;
 		CT_IconPool:Push(icon)
